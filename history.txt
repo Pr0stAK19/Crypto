@@ -1,0 +1,24 @@
+IMAGE          CREATED          CREATED BY                                      SIZE      COMMENT
+f59d159b9ab9   29 minutes ago   CMD ["gunicorn" "--bind" "0.0.0.0:8000" "--w…   0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   HEALTHCHECK {Test:[CMD-SHELL python -c "impo…   0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   EXPOSE [8000/tcp]                               0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   USER appuser                                    0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   RUN |2 lab_login=pr0stak lab_token=1fac4572b…   575B      buildkit.dockerfile.v0
+<missing>      29 minutes ago   COPY app ./app # buildkit                       575B      buildkit.dockerfile.v0
+<missing>      29 minutes ago   WORKDIR /opt/app                                0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   ENV PATH=/opt/venv/bin:/usr/local/bin:/usr/l…   0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   COPY /opt/venv /opt/venv # buildkit             17.5MB    buildkit.dockerfile.v0
+<missing>      29 minutes ago   RUN |2 lab_login=pr0stak lab_token=1fac4572b…   8.87kB    buildkit.dockerfile.v0
+<missing>      29 minutes ago   LABEL org.lab.login=pr0stak org.lab.token=1f…   0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   ARG lab_token=1fac4572bc57e2acbfadb1af59f566…   0B        buildkit.dockerfile.v0
+<missing>      29 minutes ago   ARG lab_login=pr0stak                           0B        buildkit.dockerfile.v0
+<missing>      10 days ago      CMD ["python3"]                                 0B        buildkit.dockerfile.v0
+<missing>      10 days ago      RUN /bin/sh -c set -eux;  for src in idle3 p…   36B       buildkit.dockerfile.v0
+<missing>      10 days ago      RUN /bin/sh -c set -eux;   savedAptMark="$(a…   36.8MB    buildkit.dockerfile.v0
+<missing>      10 days ago      ENV PYTHON_SHA256=c2c4321961fab0fb999d66e0ce…   0B        buildkit.dockerfile.v0
+<missing>      10 days ago      ENV PYTHON_VERSION=3.12.15                      0B        buildkit.dockerfile.v0
+<missing>      10 days ago      ENV GPG_KEY=7169605F62C751356D054A26A821E680…   0B        buildkit.dockerfile.v0
+<missing>      10 days ago      RUN /bin/sh -c set -eux;  apt-get update;  a…   3.81MB    buildkit.dockerfile.v0
+<missing>      10 days ago      ENV LANG=C.UTF-8                                0B        buildkit.dockerfile.v0
+<missing>      10 days ago      ENV PATH=/usr/local/bin:/usr/local/sbin:/usr…   0B        buildkit.dockerfile.v0
+<missing>      11 days ago      # debian.sh --arch 'amd64' out/ 'trixie' '@1…   78.8MB    debuerreotype 0.17
