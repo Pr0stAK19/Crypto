@@ -39,5 +39,6 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=10s --retries=3 \
 CMD ["gunicorn", "--bind", "0.0.0.0:8000", \
      "--workers", "2", "--threads", "4", \
      "--graceful-timeout", "30", \
+     "--worker-tmp-dir", "/dev/shm", \
      "--access-logfile", "-", "--error-logfile", "-", \
      "app.app:app"]
